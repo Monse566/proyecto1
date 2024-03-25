@@ -23,6 +23,10 @@ class Book {
     this.gender = gender;
   }
 
+  getAutor() {
+    return this.author;
+  }
+
   bookInfo() {
     return `${this.title} es un libro de ${this.gender} escrito por ${this.author} en el año ${this.year}`;
   }
@@ -50,3 +54,14 @@ while (books.length < 3) {
 const showAllBooks = () => {
   console.log(books);
 };
+
+const showAuthors = () => {
+  let authors = [];
+  for (const book of books) {
+    authors.push(book.getAutor());
+  }
+  console.log(authors.sort());
+};
+
+//showAllBooks();
+showAuthors();
