@@ -1,19 +1,7 @@
 ##proyecto1
 
-#Crea una clase Libro
+#El código parece estar correctamente escrito y estructurado. La clase Book tiene los métodos getAutor() y getGender() para obtener el autor y el género de un libro, respectivamente. El método bookInfo() proporciona una descripción del libro.
 
-#La clase libro tendrá título, autor,
-año y género
-#Crea un método que devuelva toda la información del libro
-#Pide 3 libros y guárdalos en un array
-#Los libros se introducirán al arrancar el programa pidiendo
-los datos con prompt.
-#Validar que los campos no se introduzcan vacíos
-#Validar que el año sea un número y que tenga 4 digitos
-#Validar que el género sea: aventuras, terror o fantasía
-#Crea una función que muestre todos los libros
-#Crea una función que muestre los autores ordenados
-alfabéticamente
-#Crea una función que pida un género y muestre la información
-de los libros que pertenezcan a ese género usando un el método
-que devuelve la información
+#El bucle while solicita la entrada del usuario para ingresar detalles sobre los libros y crea instancias de la clase Book con los datos ingresados, siempre que cumplan con ciertas condiciones de validación. Estas condiciones aseguran que el título y el autor no estén vacíos, que el año sea numérico y tenga una longitud de 4 caracteres, y que el género sea uno de los valores permitidos ("aventura", "terror" o "fantasía").
+
+#Las funciones showAllBooks(), showAuthors() y showGender() están definidas para mostrar información sobre los libros almacenados en la matriz books. Actualmente, la función showGender() solicita al usuario que ingrese un género y luego muestra la información de todos los libros que coinciden con ese género.
